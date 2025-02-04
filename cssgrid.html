@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: green;
+            border: 5px purple solid;
+            padding: 20px;
+            display: grid;
+            /*grid-template-columns: 10% auto auto 50% ;
+            grid-template-rows: 150px 200px 150px */
+            grid-template:100px 200px/ 30% auto auto ; 
+            grid-gap:20px 30px;
+            grid-area: ;
+            
+
+            
+        }
+        .item{
+            border: 2px red dashed;
+            padding: 10px;
+            color:blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: yellow;
+        }
+        #i3{
+            grid-row-start: 2;
+            grid-row-end: span 2;
+            
+        }
+        #i5{
+            grid-area:2/3/span 2/span 2; 
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item" id="i5">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+    </div>
+    
+</body>
+</html>
